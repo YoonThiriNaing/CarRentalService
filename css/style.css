@@ -6,7 +6,6 @@ body {
 
 .nav-bar {
     background: rgb(86, 171, 47);
-    background: linear-gradient(90deg, rgba(86, 171, 47, 1) 0%, rgba(86, 171, 47, 1) 20%, rgba(255, 255, 255, 1) 20%);
     height: 120px;
 }
 
@@ -25,10 +24,8 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-}
-
-.nav-logo {
-    margin-top: 20px;
+    align-items: center;
+    height: 100%;
 }
 
 .nav img {
@@ -43,22 +40,23 @@ body {
 .nav .nav-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
 ul.nav-list li a {
     text-decoration: none;
-    color: #000000;
+    color: #f9f2f2;
     font-size: 17px;
 }
+
 ul.nav-list li a i {
     padding: 0 5px;
 }
+
 .dropdown {
     display: none;
 }
 
-ul.nav-list li:hover .dropdown{
+ul.nav-list li:hover .dropdown {
     display: block;
     position: absolute;
     background: #ffffff;
@@ -67,9 +65,11 @@ ul.nav-list li:hover .dropdown{
     width: 140px;
     overflow: hidden;
 }
-.dropdown ul:hover{
+
+.dropdown ul:hover {
     display: block;
 }
+
 ul.nav-list li:hover .dropdown ul li {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -88,12 +88,15 @@ ul.nav-list li:hover .dropdown ul li span {
 ul.nav-list li:hover .dropdown ul li a {
     padding: 10px 10px;
     display: block;
+    color: #000000;
 
 }
-ul.nav-list li:hover .dropdown ul li a:hover{
+
+ul.nav-list li:hover .dropdown ul li a:hover {
     background-color: #a8de7c;
     padding: 10px 10px;
 }
+
 .footer {
     margin-top: 124px;
     background-image: linear-gradient(to right top, #56ab2f, #6bb83c, #80c549, #94d356, #a8e063);
@@ -156,7 +159,20 @@ ul.nav-list li:hover .dropdown ul li a:hover{
     margin-top: 20px;
     font-size: 18px;
     line-height: 40px;
+}
+
+.footer-tab ul li a {
+    text-decoration: none;
     color: #ffffff;
+
+}
+
+.footer-tab ul li img {
+    transition: transform 250ms;
+}
+
+.footer-tab ul li img:hover {
+    transform: translateY(-10px);
 }
 
 .footer p {
@@ -221,7 +237,8 @@ ul.breadcrumb li.salecars {
     padding: 10px;
     display: inline-block;
     position: absolute;
-    margin-top: 35px;right: 42%;
+    margin-top: 35px;
+    right: 42%;
 }
 
 .sales h3::before {
@@ -290,10 +307,14 @@ select {
     box-sizing: border-box;
     font-family: Poppins-regular;
     font-size: 18px;
-    color: #B3BEB9;
+    color: #000000;
 }
 
 input::placeholder {
+    color: #B3BEB9;
+}
+
+select:required:invalid {
     color: #B3BEB9;
 }
 

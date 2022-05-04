@@ -14,8 +14,8 @@
 
 <body>
     <section class="nav-bar">
-            <div class="container">
-                <div class="nav-header">
+        <div class="container">
+            <div class="nav-header">
                 <div class="nav">
                     <div class="nav-logo">
                         <img src="img/car-logo.png" alt="">
@@ -23,64 +23,64 @@
                     <div class="nav-menu">
                         <ul class="nav-list">
                             <li class="nav-item">
-                                <a href=""><i class="fa-solid fa-globe"></i>MY</a>
+                                <a href="#"><i class="fa-solid fa-globe"></i>MY</a>
                                 <div class="dropdown">
                                     <ul>
-                                        <li><a href="">MY</a></li>
-                                        <li><a href="">EN</a></li>
-                                        
+                                        <li><a href="#">MY</a></li>
+                                        <li><a href="#">EN</a></li>
+
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a href="">CreatePost<i class="fa-solid fa-angle-down"></i></a>
-                                    <div class="dropdown">
-                                        <ul>
-                                            <li>
-                                                <span>Sales</span>
-                                                <a href="">Property</a>
-                                            </li>
-                                            <li>
-                                                <span>Buy</span>
-                                                <a href="">Property</a>
-                                            </li>
-                                            <li>
-                                                <span>Rent</span>
-                                                <a href="">Property</a>
-                                                <a href="">Hostel</a>
-                                            </li>
-                                            <li>
-                                                <span>Buy</span>
-                                                <a href="">Property</a>
-                                                <a href="">Hostel</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="">User-01<i class="fa-solid fa-angle-down"></i></a>
-    
+                                <a href="#">CreatePost<i class="fa-solid fa-angle-down"></i></a>
                                 <div class="dropdown">
                                     <ul>
-                                        <li><a href="">User_01</a></li>
-                                        <li><a href="">Logout</a></li>
+                                        <li>
+                                            <span>Sales</span>
+                                            <a href="#">Property</a>
+                                        </li>
+                                        <li>
+                                            <span>Buy</span>
+                                            <a href="#">Property</a>
+                                        </li>
+                                        <li>
+                                            <span>Rent</span>
+                                            <a href="#">Property</a>
+                                            <a href="#">Hostel</a>
+                                        </li>
+                                        <li>
+                                            <span>Buy</span>
+                                            <a href="#">Property</a>
+                                            <a href="#">Hostel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">User-01<i class="fa-solid fa-angle-down"></i></a>
+
+                                <div class="dropdown">
+                                    <ul>
+                                        <li><a href="#">User_01</a></li>
+                                        <li><a href="#">Logout</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
     <section class="breadcrumbs">
-         <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="">Home</a></li>
-            <li class="salecars">SaleCars</li>
-        </ul>
-    </div>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="salecars">SaleCars</li>
+            </ul>
+        </div>
     </section>
     <section class="main-visual">
         <div class="sale-form">
@@ -93,21 +93,24 @@
                     <form>
                         <div class="row">
                             <label for="car">Car Condition</label>
-                            <select id="car" name="car">
+                            <select id="car" name="car" required>
+                                <option value="" disabled selected hidden>Car Condition</option>
                                 <option>Used</option>
                                 <option>Brand New</option>
                             </select>
                         </div>
                         <div class="row">
                             <label for="Manufracturer">Manufracturer</label>
-                            <select id="Manufracturer" name="Manufracturer">
+                            <select id="Manufracturer" name="Manufracturer" required>
+                                <option value="" disabled selected hidden>Manufracturer</option>
                                 <option>Acura</option>
                                 <option>Alfa</option>
                             </select>
                         </div>
                         <div class="row">
                             <label for="year">Year</label>
-                            <select id="year" name="year">
+                            <select id="year" name="year" required>
+                                <option value="" disabled selected hidden>Year</option>
                                 <option>2022</option>
                                 <option>2021</option>
                                 <option>2020</option>
@@ -128,15 +131,17 @@
                         </div>
                         <div class="row">
                             <label for="model">Model</label>
-                            <select id="model" name="model">
-                                <option >CL</option>
+                            <select id="model" name="model" required>
+                                <option value="" disabled selected hidden>Model</option>
+                                <option>CL</option>
                                 <option>Integra</option>
                                 <option>Legend</option>
                             </select>
                         </div>
                         <div class="row">
                             <label for="buildtype">Build Type</label>
-                            <select id="buildtype" name="buildtype">
+                            <select id="buildtype" name="buildtype" required>
+                                <option value="" disabled selected hidden>Build Type</option>
                                 <option>Sedan</option>
                                 <option>hatchback</option>
                                 <option>Sports</option>
@@ -144,22 +149,24 @@
                         </div>
                         <div class="row">
                             <label for="buildtype">Trim Name</label>
-                             <input type="text" name="" id="" placeholder="TrimName">
+                            <input type="text" name="" id="" placeholder="TrimName" value="">
                         </div>
                         <div class="row">
                             <label for="enginepower">Engine Power</label>
-                             <input type="number" name="" id="" placeholder="Engine Power">
+                            <input type="number" name="" id="" placeholder="Engine Power" value="">
                         </div>
                         <div class="row">
                             <label for="year">Steering Position</label>
-                            <select id="steering" name="steering">
+                            <select id="steering" name="steering" required>
+                                <option value="" disabled selected hidden>Steering Position</option>
                                 <option>Left Hand Drive</option>
                                 <option>Right Hand Drive</option>
                             </select>
                         </div>
                         <div class="row">
                             <label for="year">Transmissions</label>
-                            <select id="transmissions" name="transmissions">
+                            <select id="transmissions" name="transmissions" required>
+                                <option value="" disabled selected hidden>Transmissions</option>
                                 <option>Auto</option>
                                 <option>Manual</option>
                                 <option>Semi-Auto</option>
@@ -167,7 +174,8 @@
                         </div>
                         <div class="row">
                             <label for="year">Fuel Type</label>
-                            <select id="fuel" name="fuel">
+                            <select id="fuel" name="fuel" required>
+                                <option value="" disabled selected hidden>Fuel Type</option>
                                 <option>Petrol</option>
                                 <option>Diesel</option>
                                 <option>CNG</option>
@@ -176,20 +184,20 @@
                         </div>
                         <div class="row">
                             <label for="year">Color</label>
-                            <select id="color" name="color">
+                            <select id="color" name="color" required>
+                                <option value="" disabled selected hidden>Color</option>
                                 <option>White</option>
                                 <option>Black</option>
                             </select>
                         </div>
                         <div class="row">
                             <label for="vehicle">Vehicle Identification Number</label>
-                             <input type="text" name="" id="" placeholder="Vehicle Identification  Number">
+                            <input type="text" name="" id="" placeholder="Vehicle Identification  Number" value="">
                         </div>
                         <div class="row-submit">
-                        <input type="submit" class="back">
-                        <input type="submit" >
-                       
-                         </div>
+                            <input type="submit" value="Back" class="back">
+                            <input type="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -203,7 +211,7 @@
                         <img src="img/ownership.png">
                     </div>
                     <div>
-                        <img src="img/buy-home.png">
+                        <img src="img/car-rental.png">
                     </div>
                     <div>
                         <img src="img/money.png">
@@ -213,26 +221,26 @@
                     <div class="footer-tab">
                         <h3>Contact Us</h3>
                         <ul>
-                            <li><i class="fa-solid fa-phone"></i>09-89006652</li>
-                            <li><i class="fa-solid fa-envelope"></i>info@bib-mm.com</li>
-                            <li><i class="fa-solid fa-location-dot"></i>No. (88/90), 4th floor,
-                                51st Street, Middle Block,
-                                Pazundaung Township,
-                                Yangon.</li>
+                            <li><a href="#"><i class="fa-solid fa-phone"></i>09-89006652</a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope"></i>info@bib-mm.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>No. (88/90), 4th floor,
+                                    51st Street, Middle Block,
+                                    Pazundaung Township,
+                                    Yangon.</a></li>
                         </ul>
                     </div>
                     <div class="footer-tab">
                         <h3>Download Our App</h3>
                         <ul>
-                            <li><img src="img/googleplay.png"></li>
-                            <li class="web"><img src="img/web.png"></li>
+                            <li><a href="#"><img src="img/googleplay.png"></a></li>
+                            <li><a href="#"><img src="img/web.png"></a></li>
                         </ul>
                     </div>
                     <div class="footer-tab">
                         <h3>Other Information</h3>
                         <ul>
-                            <li><i class="fa-solid fa-arrow-right"></i>About Us</li>
-                            <li><i class="fa-solid fa-arrow-right"></i>Terms and Condition</li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right"></i>About Us</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Terms and Condition</a></li>
                         </ul>
                     </div>
                 </div>
@@ -241,4 +249,5 @@
         </div>
     </section>
 </body>
+
 </html>
