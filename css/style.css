@@ -145,7 +145,6 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     margin-top: 64px;
     margin-left: 25px;
     margin-right: 10px;
-    font-family: Poppins-regular;
     font-size: 20px;
     color: #ffffff;
 }
@@ -179,7 +178,6 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     margin-top: 64px;
     display: block;
     text-align: center;
-    font-family: Poppins-regular;
     font-size: 15px;
     color: #ffffff;
 }
@@ -214,7 +212,7 @@ ul.breadcrumb li.salecars {
 }
 
 /* --------------------------------------------------------------------------------------------- */
-.sales {
+.form {
     width: 100%;
     border-radius: 0 167px 0 167px;
     border: 0 solid #DDE4DE;
@@ -226,13 +224,13 @@ ul.breadcrumb li.salecars {
 
 }
 
-.sales .form-title {
+.form .form-title {
 
     text-align: center;
     position: relative;
 }
 
-.sales h3 {
+.form h3 {
     font-size: 24px;
     padding: 10px;
     display: inline-block;
@@ -241,7 +239,7 @@ ul.breadcrumb li.salecars {
     right: 42%;
 }
 
-.sales h3::before {
+.form h3::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -253,7 +251,7 @@ ul.breadcrumb li.salecars {
     left: 0;
 }
 
-.sales h3::after {
+.form h3::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -266,7 +264,7 @@ ul.breadcrumb li.salecars {
 }
 
 
-.sales .form-title .border {
+.form .form-title .border {
     width: 15px;
     height: 12px;
     position: absolute;
@@ -274,7 +272,7 @@ ul.breadcrumb li.salecars {
     top: 352px;
 }
 
-.sales img {
+.form img {
     position: absolute;
     left: 43%;
     margin-top: 10px;
