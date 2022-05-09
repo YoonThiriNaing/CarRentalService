@@ -87,24 +87,17 @@
     <section class="main-visual">
         <div class="container">
             <div class="slideshow">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="img/img-01.png">
+                <div class="mySlides">
+                    <img src="img/car.webp">
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="img/img-01.png">
+                <div class="mySlides">
+                    <img src="img/car.webp">
                 </div>
 
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="img/img-01.png">
+                <div class="mySlides">
+                    <img src="img/car.webp">
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-
             </div>
             <div class="m-detail">
                 <div class="m-title">
@@ -171,27 +164,26 @@
                 <h3>Similar Listings</h3>
                 <div class="m-slide">
                     <div class="m-slide-img">
-                        <img src="img/img_02.png" alt="">
+                        <img src="img/car_01.jpg" alt="">
                         <span>5000 lakhs</span>
                     </div>
                     <div class="m-slide-img">
-                        <img src="img/img_02.png" alt="">
+                        <img src="img/car_01.jpg" alt="">
                         <span>5000 lakhs</span>
                     </div>
                     <div class="m-slide-img">
-                        <img src="img/img_02.png" alt="">
+                        <img src="img/car_01.jpg" alt="">
                         <span>5000 lakhs</span>
                     </div>
                     <div class="m-slide-img">
-                        <img src="img/img_02.png" alt="">
+                        <img src="img/car_01.jpg" alt="">
                         <span>5000 lakhs</span>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
+
     <section class="footer">
         <div class="container">
             <div class="footer-nav">
@@ -237,16 +229,18 @@
             </div>
         </div>
     </section>
+
     <script src="js/jquery.min.js"></script>
     <script src="slick/slick/slick.min.js"></script>
-    <script src="js/custom.js"></script>
     <script>
         $(document).ready(function () {
+            $('.slideshow').slick();
             $('.m-slide').slick({
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 3
             });
+           
         })
     </script>
 </body>
