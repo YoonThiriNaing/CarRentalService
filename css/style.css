@@ -6,7 +6,7 @@ body {
 
 .nav-bar {
     background: rgb(86, 171, 47);
-    height: 120px;
+    /* height: 120px; */
 }
 
 .container {
@@ -15,10 +15,9 @@ body {
 }
 
 .nav-header {
-    max-width: 1280px;
-    height: 120px;
     background-image: url('../img/Path\ 10.png');
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    height: 120px;
 }
 
 .nav {
@@ -212,18 +211,22 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     margin-left: 32%;
     margin-top: 2%;
 }
-.sign-in-form .row-spans{
+
+.sign-in-form .row-spans {
     margin-top: 30px;
     text-align: center;
 }
+
 .sign-in-form .row-span {
     display: block;
     text-align: center;
     margin: 10px 0;
 }
-.sign-in-form .row-span span{
+
+.sign-in-form .row-span span {
     display: block;
 }
+
 .sign-in-form span a {
     text-decoration: none;
     color: #4B821E;
@@ -268,29 +271,6 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     background-color: #2196F3;
 }
 
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-
-.label input:checked~.checkmark:after {
-    display: block;
-}
-
-
-.label .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
 
 /* ----------------------------------------------------------------------------------------------- */
 
@@ -531,7 +511,7 @@ h4 {
 h3 {
     font-size: 20px;
     padding: 15px 35px;
-    border-bottom: 1px solid #f1ecec;
+    /* border-bottom: 1px solid #f1ecec; */
 
 }
 
@@ -556,4 +536,264 @@ h3 {
 
 .list {
     padding-bottom: 20px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all  0.3s ease-in-out;
+    transition: all 0.3 ease in out;
+    background-color: #ffffff;
+    display: block;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width:768px) {
+    .header{
+        background-image: url("../img/signup-mobile\ –\ 1.png");
+        width: 100%;
+    }
+    .sign-in-form img{
+        width: 30%;
+        height: 30%;
+        top: 0;
+        left: 35%;
+    }
+    label{
+        font-size: 3vw;
+        width: auto;
+    }
+    input[type=text],input[type=number],input[type=password],input[type=submit],select{
+        width: 100%;
+        padding: 7px 10px;
+        border-radius: 10px;
+        font-size: 3vw;
+        margin: 8px 0px;
+    }
+    .sign-in-form input[type=submit]{
+        width: 100%;
+        padding: 7px 0;
+        border-radius: 10px;
+        font-size: 3vw;
+        margin-left: 0;
+    }
+    .sign-in-form .row-spans{
+        margin-top: 5%;
+        font-size: 2vw;
+    }
+    .sign-in-form .row-spans span{
+        font-size: 2vw;
+    }
+    .sign-in-form .row-img{
+       margin-left: -32%;
+    }
+    .sign-in-form .row-img img{
+        width: 20%;
+        height: 20%;
+    }
+    .label{
+        padding-left: 0;
+        font-size: 2vw;
+    }
+    .sign-in-form span a{
+        font-size: 2vw;
+    }
+    .sign-in-form .span-password{
+        font-size: 3vw;
+    }
+
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .nav-header{
+        width: 100%;
+        background-image: url('../img/logo_01.png');
+        height: 45px;
+    }
+    .nav img{
+        width: 15%;
+        height: 15%;
+    }
+    .hamburger{
+        display: block;
+        margin-left: 70%;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px)rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px)rotate(-45deg);
+    }
+    .nav .nav-list{
+        position: fixed;
+        /* left: -100%; */
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.8;
+        margin-top: 44px;
+    }
+    
+    .nav-item{
+        padding: 10px 0;
+        border-bottom: 1px solid #ffffff;
+
+    }
+    .nav .nav-list.active{
+        left: 0;
+        top: 0;
+    }
+    .nav .nav-list li:hover .dropdown{
+        background-color: transparent;
+    }
+    ul.nav-list li:hover .dropdown{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 0 0 ;
+        position: relative;
+    }
+   ul.nav-list li:hover .dropdown ul li{
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+    ul.nav-list li:hover .dropdown ul li span{
+        font-size: 3vw;
+        background-color: #000000;
+        width: auto;
+        margin-top: 2%;
+        padding: 10px 25px;
+    }
+    ul.nav-list li  a{
+       font-size: 3vw;
+       padding:  0 15px;
+      
+    }
+    ul.nav-list li:hover .dropdown ul li  a{
+        font-size: 3vw;
+        color: #ffffff;
+        padding: 10px 25px;
+    }
+    ul.breadcrumb{
+        margin-top: 32px;
+        margin-bottom: 32px;
+        align-items: baseline;
+    }
+    ul.breadcrumb li.salecars{
+        font-size: 3vw;
+    }
+    ul.breadcrumb li a{
+        font-size: 3vw;
+    }
+    .form{
+        border-radius: 0 50px 0 50px;
+    }
+    .form h3{
+        font-size: 3vw;
+    }
+    .form h3:before{
+        width: 10px;
+        height: 10px;
+    }
+    .form h3:after{
+        width: 10px;
+        height: 10px;
+    }
+    .form img{
+        width: 16%;
+        margin-top: 4%;
+        left: 29%;
+    }
+    form{
+        padding-top: 25%;
+    }
+    .row-submit{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .row-submit input{
+        width: 30%;
+        margin-left: 12%;
+    }
+    .footer-icon{
+     width: 50%;
+    }
+    .footer-icon div{
+       width: 50px;
+       height: 50px;
+    }
+    .footer-icon img{
+        width: 30px;
+        height: 30px;
+        margin-top: 11px;
+        margin-left: 11px;
+    }
+    .footer-nav{
+        top: -27px;
+    }
+    .footer-menu{
+        display: block;
+    }
+    .footer-tab{
+       width: 50%;
+        padding-top: 7%;
+        margin-top: 0;
+
+    }
+    h3{
+        font-size: 4vw;
+        padding: 10px 0;
+    }
+    .footer-tab ul li{
+        font-size: 3vw;
+        margin-top: 0;
+        line-height: 35px;
+    }
+    .footer p{
+        margin-top: 32px;
+        font-size: 3vw;
+    }
+    .footer-tab ul li img{
+        margin: -16px 0;
+    }
+    .footer-tab ul li .google{
+        margin-top: 10px;
+    }
+    .footer{
+        margin-top: 64px;
+    }
+    .m-title span{
+        font-size: 3vw;
+        padding: 20px 12px;
+    }
+    h4{
+        font-size: 4vw;
+    }
+    .m-list ul li p{
+        font-size: 3vw;
+    }
+    .m-list ul li span{
+        font-size: 3vw;
+        padding: 0 10px;
+    }
+    .m-slide-img span{
+       font-size: 3vw;
+    }
+    .m-detail h3{
+        padding: 15px 39px;
+    }
+
 }

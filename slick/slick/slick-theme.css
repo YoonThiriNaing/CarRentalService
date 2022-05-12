@@ -75,7 +75,9 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0;
+    background: transparent;
+    z-index: 1;
 }
 [dir='rtl'] .slick-prev
 {
@@ -85,15 +87,18 @@
 .slick-prev:before
 {
     content: '←';
+    background:transparent;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
+    background:transparent;
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 0;
+    background: transparent;
 }
 [dir='rtl'] .slick-next
 {
@@ -103,10 +108,12 @@
 .slick-next:before
 {
     content: '→';
+    background: transparent;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    background:transparent;
 }
 
 /* Dots */
