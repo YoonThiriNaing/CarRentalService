@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     padding: 0 0;
-    font-family: Poppins-regular;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar {
@@ -290,11 +290,9 @@ ul.breadcrumb li a {
     text-decoration: none;
     color: #000000;
     font-size: 18px;
-    font-family: Poppins-regular;
 }
 
 ul.breadcrumb li.salecars {
-    font-family: Poppins-regular;
     font-size: 18px;
     color: #50982C;
     display: inline-block;
@@ -375,7 +373,6 @@ form {
 }
 
 label {
-    font-family: Poppins-regular;
     font-size: 18px;
     width: 20%;
     display: inline-block;
@@ -393,7 +390,6 @@ select {
     border: 1px solid #DDE4DE;
     border-radius: 15px;
     box-sizing: border-box;
-    font-family: Poppins-regular;
     font-size: 18px;
     color: #000000;
 }
@@ -414,7 +410,6 @@ input[type=submit] {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    font-family: Poppins-regular;
     font-size: 18px;
 }
 
