@@ -538,15 +538,16 @@ h3 {
     padding-bottom: 20px;
 }
 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;
 }
-.bar{
+
+.bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all  0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3 ease in out;
     background-color: #ffffff;
     display: block;
@@ -554,88 +555,109 @@ h3 {
 
 /* ------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width:768px) {
-    .header{
+@media only screen and (max-width:767px) {
+    .header {
         background-image: url("../img/signup-mobile\ –\ 1.png");
         width: 100%;
     }
-    .sign-in-form img{
+
+    .sign-in-form img {
         width: 30%;
         height: 30%;
         top: 0;
         left: 35%;
     }
-    label{
+
+    label {
         font-size: 3vw;
         width: auto;
     }
-    input[type=text],input[type=number],input[type=password],input[type=submit],select{
+
+    input[type=text],
+    input[type=number],
+    input[type=password],
+    input[type=submit],
+    select {
         width: 100%;
         padding: 7px 10px;
         border-radius: 10px;
         font-size: 3vw;
         margin: 8px 0px;
     }
-    .sign-in-form input[type=submit]{
+
+    .sign-in-form input[type=submit] {
         width: 100%;
         padding: 7px 0;
         border-radius: 10px;
         font-size: 3vw;
         margin-left: 0;
     }
-    .sign-in-form .row-spans{
+
+    .sign-in-form .row-spans {
         margin-top: 5%;
         font-size: 2vw;
     }
-    .sign-in-form .row-spans span{
+
+    .sign-in-form .row-spans span {
         font-size: 2vw;
     }
-    .sign-in-form .row-img{
-       margin-left: -32%;
+
+    .sign-in-form .row-img {
+        margin-left: -32%;
     }
-    .sign-in-form .row-img img{
+
+    .sign-in-form .row-img img {
         width: 20%;
         height: 20%;
     }
-    .label{
+
+    .label {
         padding-left: 0;
         font-size: 2vw;
     }
-    .sign-in-form span a{
+
+    .sign-in-form span a {
         font-size: 2vw;
     }
-    .sign-in-form .span-password{
+
+    .sign-in-form .span-password {
         font-size: 3vw;
     }
 
-    .container{
+    .container {
         width: 85%;
         margin: 0 auto;
     }
-    .nav-header{
+
+    .nav-header {
         width: 100%;
         background-image: url('../img/logo_01.png');
         height: 45px;
     }
-    .nav img{
+
+    .nav img {
         width: 15%;
         height: 15%;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         margin-left: 70%;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity:0;
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px)rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px)rotate(-45deg);
     }
-    .nav .nav-list{
+
+    .nav .nav-list {
         position: fixed;
         /* left: -100%; */
         top: -100%;
@@ -647,153 +669,273 @@ h3 {
         opacity: 0.8;
         margin-top: 44px;
     }
-    
-    .nav-item{
+
+    .nav-item {
         padding: 10px 0;
         border-bottom: 1px solid #ffffff;
 
     }
-    .nav .nav-list.active{
+
+    .nav .nav-list.active {
         left: 0;
         top: 0;
     }
-    .nav .nav-list li:hover .dropdown{
+
+    .nav .nav-list li:hover .dropdown {
         background-color: transparent;
     }
-    ul.nav-list li:hover .dropdown{
+
+    ul.nav-list li:hover .dropdown {
         width: 100%;
         border-radius: 0;
-        box-shadow: 0 0 0 0 ;
+        box-shadow: 0 0 0 0;
         position: relative;
     }
-   ul.nav-list li:hover .dropdown ul li{
-       margin-top: 0;
-       margin-bottom: 0;
-   }
-    ul.nav-list li:hover .dropdown ul li span{
+
+    ul.nav-list li:hover .dropdown ul li {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul.nav-list li:hover .dropdown ul li span {
         font-size: 3vw;
         background-color: #000000;
         width: auto;
         margin-top: 2%;
         padding: 10px 25px;
     }
-    ul.nav-list li  a{
-       font-size: 3vw;
-       padding:  0 15px;
-      
+
+    ul.nav-list li a {
+        font-size: 3vw;
+        padding: 0 15px;
+
     }
-    ul.nav-list li:hover .dropdown ul li  a{
+
+    ul.nav-list li:hover .dropdown ul li a {
         font-size: 3vw;
         color: #ffffff;
         padding: 10px 25px;
     }
-    ul.breadcrumb{
+
+    ul.breadcrumb {
         margin-top: 32px;
         margin-bottom: 32px;
         align-items: baseline;
     }
-    ul.breadcrumb li.salecars{
+
+    ul.breadcrumb li.salecars {
         font-size: 3vw;
     }
-    ul.breadcrumb li a{
+
+    ul.breadcrumb li a {
         font-size: 3vw;
     }
-    .form{
+
+    .form {
         border-radius: 0 50px 0 50px;
     }
-    .form h3{
+
+    .form h3 {
         font-size: 3vw;
     }
-    .form h3:before{
+
+    .form h3:before {
         width: 10px;
         height: 10px;
     }
-    .form h3:after{
+
+    .form h3:after {
         width: 10px;
         height: 10px;
     }
-    .form img{
+
+    .form img {
         width: 16%;
         margin-top: 4%;
         left: 29%;
     }
-    form{
+
+    form {
         padding-top: 25%;
     }
-    .row-submit{
+
+    .row-submit {
         margin-left: 0;
         margin-top: 0;
     }
-    .row-submit input{
+
+    .row-submit input {
         width: 30%;
         margin-left: 12%;
     }
-    .footer-icon{
-     width: 50%;
+
+    .footer-icon {
+        width: 50%;
     }
-    .footer-icon div{
-       width: 50px;
-       height: 50px;
+
+    .footer-icon div {
+        width: 50px;
+        height: 50px;
     }
-    .footer-icon img{
+
+    .footer-icon img {
         width: 30px;
         height: 30px;
         margin-top: 11px;
         margin-left: 11px;
     }
-    .footer-nav{
+
+    .footer-nav {
         top: -27px;
     }
-    .footer-menu{
+
+    .footer-menu {
         display: block;
     }
-    .footer-tab{
-       width: 50%;
+
+    .footer-tab {
+        width: 50%;
         padding-top: 7%;
         margin-top: 0;
 
     }
-    h3{
+
+    h3 {
         font-size: 4vw;
         padding: 10px 0;
     }
-    .footer-tab ul li{
+
+    .footer-tab ul li {
         font-size: 3vw;
         margin-top: 0;
         line-height: 35px;
     }
-    .footer p{
+
+    .footer p {
         margin-top: 32px;
         font-size: 3vw;
     }
-    .footer-tab ul li img{
+
+    .footer-tab ul li img {
         margin: -16px 0;
     }
-    .footer-tab ul li .google{
+
+    .footer-tab ul li .google {
         margin-top: 10px;
     }
-    .footer{
+
+    .footer {
         margin-top: 64px;
     }
-    .m-title span{
+
+    .m-title span {
         font-size: 3vw;
         padding: 20px 12px;
     }
-    h4{
+
+    h4 {
         font-size: 4vw;
     }
-    .m-list ul li p{
+
+    .m-list ul li p {
         font-size: 3vw;
     }
-    .m-list ul li span{
+
+    .m-list ul li span {
         font-size: 3vw;
         padding: 0 10px;
     }
-    .m-slide-img span{
-       font-size: 3vw;
+
+    .m-slide-img span {
+        font-size: 3vw;
     }
-    .m-detail h3{
+
+    .m-detail h3 {
         padding: 15px 39px;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-header {
+        background-image: url('../img/tablet-logo.png');
+        background-repeat: no-repeat;
+        height: 120px;
+    }
+
+    .nav-menu {
+        width: 45%;
+    }
+
+    .form img {
+        left: 32%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    label {
+        width: 24%;
+    }
+
+    .footer-icon {
+        width: 50%;
+    }
+
+    .footer-tab {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 14px;
+        width: 100%;
+    }
+
+    .footer-tab ul li {
+        font-size: 2vw;
+    }
+
+    .header {
+        background-image: url("../img/tablet_01.png");
+        width: 100%;
+    }
+
+    .sign-in-form img {
+        left: 40%;
+    }
+
+    .sign-in-form input[type=text],
+    input[type=number],
+    input[type=password] {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .sign-in-form label {
+        width: auto;
+        padding: 0 18px;
+    }
+
+    .sign-in-form .row-img {
+        margin-left: -23%;
+    }
+
+    .label {
+        padding-left: 0;
+    }
+
+    .sign-in-form input[type=submit] {
+        margin-top: 7%;
+    }
+
+    .span-password {
+        line-height: 20px;
+        font-size: 2vw;
+        display: block;
+        padding-bottom: 20px;
+        padding-left: 18px;
+    }
 }
