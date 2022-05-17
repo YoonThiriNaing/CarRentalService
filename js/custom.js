@@ -5,7 +5,7 @@ hamburger.addEventListener("click",()=>{
     navMenu.classList.toggle("active");
 })
 
-$('.dropdown ul li').hide();
+// $('.dropdown ul li').hide();
 $('.nav-a').click(function() {
     $('.dropdown ul li').toggle(200);
 });    
