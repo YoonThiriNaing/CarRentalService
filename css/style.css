@@ -330,7 +330,7 @@ ul.breadcrumb li.salecars {
     padding: 10px;
     display: inline-block;
     position: absolute;
-    margin-top: 35px;
+    margin-top: 65px;
     right: 42%;
 }
 
@@ -370,7 +370,7 @@ ul.breadcrumb li.salecars {
 .form img {
     position: absolute;
     left: 43%;
-    margin-top: 10px;
+    margin-top: 44px;
     z-index: -1;
 }
 
@@ -397,6 +397,7 @@ select {
 
 .custom-select {
     position: relative;
+    margin: 15px 0;
 }
 
 .custom-arrow {
@@ -436,11 +437,9 @@ input[type=text],
 input[type=number],
 input[type=password] {
     padding: 15px 20px;
-    margin: 20px 0;
     display: block;
     border: 1px solid#A1BEAF;
-    ;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: 15px;
     color: #000000;
@@ -453,7 +452,7 @@ input[type=submit] {
     color: white;
     padding: 14px 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
 }
