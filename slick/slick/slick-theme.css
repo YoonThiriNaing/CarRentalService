@@ -78,6 +78,7 @@
     left: 0;
     background: transparent;
     z-index: 1;
+    padding: 0 4px
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,8 +98,9 @@
 
 .slick-next
 {
-    right: 0;
+    right: 8px;
     background: transparent;
+    padding: 0 4px;
 }
 [dir='rtl'] .slick-next
 {

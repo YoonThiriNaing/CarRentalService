@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .nav-bar {
@@ -79,11 +79,11 @@ ul.nav-list li:hover .dropdown ul li {
 ul.nav-list li:hover .dropdown ul li span {
     color: #ffffff;
     background-color: #6bb83c;
-    font-family: Poppins-regular;
     display: block;
     width: 100%;
     padding: 10px 10px;
     margin-top: -14px;
+    font-size: 17px;
 }
 
 ul.nav-list li:hover .dropdown ul li a {
@@ -183,6 +183,16 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     color: #ffffff;
 }
 
+.footer-tab h3 {
+    padding: 0
+}
+
+.web {
+    padding-left: 4px;
+    margin-top: -30px;
+    display: block;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 .header {
     background: url('../img/Sign-up.png') no-repeat center center fixed;
@@ -205,7 +215,7 @@ ul.nav-list li:hover .dropdown ul li a:hover {
     height: 70px;
     position: relative;
     top: 0;
-    left: 47%;
+    left: 45%;
 }
 
 .sign-in-form form {
@@ -242,7 +252,7 @@ ul.nav-list li:hover .dropdown ul li a:hover {
 }
 
 .sign-in-form .row-img {
-    margin-left: -12%;
+    margin-left: -18%;
 }
 
 .sign-in-form .row-img img {
@@ -283,9 +293,8 @@ ul.nav-list li:hover .dropdown ul li a:hover {
 /* ----------------------------------------------------------------------------------------------- */
 
 ul.breadcrumb {
-    margin-top: 64px;
+    margin-top: 30px;
     display: flex;
-    margin-bottom: 64px;
 }
 
 ul.breadcrumb li+li:before {
@@ -315,7 +324,7 @@ ul.breadcrumb li.salecars {
     -webkit-box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.16);
     padding-bottom: 64px;
-    margin: 0 auto;
+    margin: 30px auto;
 
 }
 
@@ -485,6 +494,7 @@ input[type=submit]:hover {
 /* --------------------------------------------------------------------------------------------- */
 .slideshow {
     width: 100%;
+    margin-top: 30px;
 }
 
 .mySlides img {
@@ -517,12 +527,12 @@ input[type=submit]:hover {
 }
 
 .m-data {
-    width: 80%;
+    width: 94%;
     margin: 0 auto;
 }
 
 .m-data .m-list {
-    margin-top: 64px;
+    margin-top: 40px;
 }
 
 .m-list ul li {
@@ -549,10 +559,8 @@ h4 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px 35px;
-    /* border-bottom: 1px solid #f1ecec; */
-
 }
 
 .m-slide {
@@ -595,7 +603,7 @@ h3 {
 
 /* ------------------------------------------------------------------------------------- */
 .search {
-    background-color: #4B821E;
+    background-color: #eef5e6;
     background-size: cover;
     background-position: center center;
     padding-bottom: 30px;
@@ -609,13 +617,19 @@ h3 {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    width: 100%;
 }
 
-.search-box form label {
-    width: auto;
+.search-box .custom-select {
+    width: 20%;
 }
 
-.search-box a {
+.search-box .custom-arrow::before,
+.search-box .custom-arrow::after {
+    top: 42%;
+}
+
+.search-box .find-btn {
     padding: 15px 20px;
     border-radius: 10px;
     text-decoration: none;
@@ -623,12 +637,19 @@ h3 {
     background-color: #ffffff;
     margin-top: 4px;
     display: block;
-    width: 88%;
+    width: 100%;
     text-align: center;
-
 }
 
-.search-box a:hover {
+.search-box select {
+    border: none;
+}
+
+.search-box form label {
+    width: auto;
+}
+
+.search-box .find-btn:hover {
     background-color: #2c670e;
     transition: 1s;
     border: 2px solid #ffffff;
@@ -639,17 +660,47 @@ h3 {
     color: #000000;
 }
 
-.search-box div.row {
-    width: 40%;
-    margin: 0 10px;
-}
-
 .search-box input[type=text],
 input[type=number],
 select {
     width: 100%;
     border-radius: 10px;
     margin: 5px 0;
+}
+
+.search-option {
+    padding: 20px 0;
+}
+
+.search-option div {
+    position: relative;
+}
+
+.search-option div a {
+    position: absolute;
+    top: 0;
+    left: 89%;
+    cursor: pointer;
+}
+
+.search-option div i {
+    font-size: 20px;
+    color: #2c670e;
+}
+
+.search-animation {
+    margin-right: 10px;
+    animation: beat 2s alternate infinite ease-in;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
 }
 
 .car-sale-properties {
@@ -665,7 +716,7 @@ select {
 }
 
 .c-slide {
-    padding: 10px 10px;
+    padding: 0 20px;
 }
 
 .c-slide .c-slide-img {
@@ -682,8 +733,6 @@ select {
 
 .c-slide-img img {
     width: 100%;
-    padding-top: 10px;
-
 }
 
 .price {
@@ -701,11 +750,13 @@ select {
 }
 
 .price a {
-    padding: 10px 15px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
     border: 1px solid #ffffff;
     background-color: #a3df87;
-    transition: 1s;
+    text-decoration: none;
+    color: #4B821E;
+    transition: all 0.5s;
 
 }
 
@@ -713,16 +764,36 @@ select {
     background-color: #4B821E;
 }
 
-.price a {
-    text-decoration: none;
-    color: #4B821E;
-}
-
 .price a:hover {
     color: #ffffff;
 }
 
+.button a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
 
+.button a:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 4px;
+    transition: 0.5s;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.button a:hover {
+    padding-right: 30px;
+    padding-left: 18px;
+}
+
+.button a:hover:after {
+    opacity: 1;
+    right: 10px;
+}
 
 /* --------------------------------------------------------------------------------------- */
 @media only screen and (max-width:767px) {
@@ -752,11 +823,8 @@ select {
     input[type=password],
     input[type=submit],
     select {
-        width: 100%;
-        padding: 7px 10px;
-        border-radius: 10px;
         font-size: 3vw;
-        margin: 8px 0px;
+
     }
 
     .sign-in-form {
@@ -777,11 +845,11 @@ select {
 
     .sign-in-form .row-spans {
         margin-top: 5%;
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     .sign-in-form .row-spans span {
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     .sign-in-form .row-img {
@@ -795,11 +863,11 @@ select {
 
     .label {
         padding-left: 0;
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
 
     .sign-in-form span a {
-        font-size: 2vw;
+        font-size: 2.4vw;
     }
 
     .sign-in-form .span-password {
@@ -899,6 +967,11 @@ select {
         padding: 10px 25px;
     }
 
+    ul.nav-list li:hover .dropdown ul li a:hover {
+        padding: 10px 25px;
+    }
+
+
     ul.breadcrumb {
         margin-top: 32px;
         margin-bottom: 32px;
@@ -919,6 +992,8 @@ select {
 
     .form h3 {
         font-size: 3vw;
+        margin-top: 28px;
+        right: 39%;
     }
 
     .form h3:before {
@@ -934,7 +1009,7 @@ select {
     .form img {
         width: 16%;
         margin-top: 4%;
-        left: 29%;
+        left: 32%;
     }
 
     form {
@@ -952,9 +1027,17 @@ select {
     }
 
     .custom-arrow::before {
-        border-left: 3px solid transparent;
-        border-right: 3px solid transparent;
-        border-top: 3px solid #000000;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #000000;
+    }
+
+    .custom-select select,
+    input[type=text],
+    input[type=number],
+    input[type=password] {
+        padding: 12px 8px;
+        border-radius: 10px;
     }
 
     .custom-arrow::before,
@@ -995,7 +1078,7 @@ select {
 
     h3 {
         font-size: 4vw;
-        padding: 10px 0;
+        padding: 10px 28px;
     }
 
     .footer-tab ul li {
@@ -1009,12 +1092,14 @@ select {
         font-size: 3vw;
     }
 
-    .footer-tab ul li img {
-        margin: -16px 0;
-    }
+
 
     .footer-tab ul li .google {
         margin-top: 10px;
+    }
+
+    .footer-tab ul li img {
+        margin-left: -11px;
     }
 
     .footer {
@@ -1049,6 +1134,7 @@ select {
 
     .search-box form {
         display: block;
+        width: 100%;
     }
 
     .search-box div.row {
@@ -1061,10 +1147,28 @@ select {
         font-size: 3vw;
     }
 
+    .search-option div a {
+        left: 68%;
+    }
+
+    .button a:after {
+        left: auto;
+        top: 5px;
+        font-size: 20px;
+    }
+
+    .search-box .custom-select {
+        width: 100%;
+    }
+
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 1.6vw;
+    }
+
     .container {
         width: 90%;
     }
@@ -1076,11 +1180,29 @@ select {
     }
 
     .nav-menu {
-        width: 45%;
+        width: 30%;
+    }
+
+    ul.nav-list li:hover .dropdown {
+        width: 120px;
+    }
+
+    ul.breadcrumb li a {
+        display: block;
+        font-size: 2vw;
+    }
+
+    ul.breadcrumb li.salecars {
+        font-size: 2vw;
+    }
+
+    .search-box .custom-select select,
+    input[type=submit] {
+        font-size: 2vw;
     }
 
     .form img {
-        left: 32%;
+        left: 39%;
     }
 
     form {
@@ -1088,7 +1210,7 @@ select {
     }
 
     .footer-icon {
-        width: 50%;
+        width: 35%;
     }
 
     .footer-tab {
@@ -1098,8 +1220,16 @@ select {
         width: 100%;
     }
 
+    h3 {
+        font-size: 2.3vw;
+    }
+
     .footer-tab ul li {
-        font-size: 2vw;
+        font-size: 2.1vw;
+    }
+
+    .footer-tab h3 {
+        font-size: 2.5vw;
     }
 
     .header {
@@ -1108,16 +1238,18 @@ select {
     }
 
     .sign-in-form img {
-        left: 40%;
+        left: 35%;
+        width: 25%;
+        height: 25%;
     }
 
-    .sign-in-form input[type=text],
+    /* .sign-in-form input[type=text],
     input[type=number],
     input[type=password] {
         width: 100%;
         padding: 15px 10px;
         font-size: 3vw;
-    }
+    } */
 
     .sign-in-form {
         top: 15%;
@@ -1125,11 +1257,19 @@ select {
 
     .sign-in-form label {
         width: auto;
-        font-size: 3vw;
+        font-size: 2.1vw;
+    }
+
+    .row-span span {
+        font-size: 2.1vw;
+    }
+
+    .row-spans span {
+        font-size: 2.1vw;
     }
 
     .sign-in-form .row-img {
-        margin-left: -23%;
+        margin-left: 0%;
     }
 
     .sign-in-form .label {
@@ -1143,10 +1283,68 @@ select {
     }
 
     .sign-in-form .span-password {
-        line-height: 37px;
+        line-height: 42px;
         font-size: 3vw;
         display: block;
         padding-bottom: 20px;
         padding-left: 18px;
+        width: 100%;
+    }
+
+    .search-option div a {
+        left: 82%;
+        font-size: 2vw;
+    }
+
+    .button a:after {
+        top: 2px;
+        left: auto;
+    }
+
+    .button a:hover {
+        padding-right: 42px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box form {
+        width: 100%;
+    }
+
+    .search-box .custom-select {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .custom-arrow::before {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 8px solid #000000;
+    }
+
+    .custom-select select,
+    input[type=text],
+    input[type=number],
+    input[type=password],
+    input[type=submit] {
+        font-size: 2.4vw;
+        padding: 24px 14px;
+        border-radius: 24px;
+    }
+
+    .custom-select label {
+        font-size: 2.4vw;
+    }
+
+    .row-submit {
+        margin-top: 40px;
+        margin-bottom: -17px;
+    }
+
+    .row-spans span,
+    .row-spans a {
+        font-size: 2.4vw;
     }
 }
