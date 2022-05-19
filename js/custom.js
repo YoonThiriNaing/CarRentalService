@@ -9,4 +9,3 @@ hamburger.addEventListener("click",()=>{
 $('.nav-a').click(function() {
     $('.dropdown ul li').toggle(200);
 });    
-

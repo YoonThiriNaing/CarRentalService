@@ -795,6 +795,219 @@ select {
     right: 10px;
 }
 
+.slick-lightbox-slick-img {
+    width: 100%;
+    height: 800px;
+    max-height: 0;
+}
+
+.buy_cars {
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-container {
+    box-shadow: 0 5px 14px -6px grey;
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container .product-details {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    width: 40%;
+
+}
+
+.card-container .product-details h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    color: #344055;
+    margin: 0;
+
+}
+
+.card-container .product-details h1:before {
+    position: absolute;
+    content: '';
+    right: 0%;
+    top: 0%;
+    transform: translate(25px, -15px);
+    display: inline-block;
+    background: #ffe6e6;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+
+}
+
+.card-container .hint-star {
+    display: inline-block;
+    margin: 10px 0;
+    color: gold;
+    width: 50%;
+}
+
+.card-container .product-details>p {
+    text-align: center;
+    font-size: 15px;
+    color: #7d7d7d;
+
+}
+
+.card-container .control {
+    position: absolute;
+    bottom: 19%;
+    left: 12.8%;
+}
+
+.card-container .btn {
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    background: #4caf50;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.card-container .btn span {
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0;
+
+}
+
+.card-container .btn .price,
+.card-container .shopping-cart {
+    background: #333;
+    border: 0;
+    margin: 0;
+}
+
+.card-container .product-image {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+}
+
+.card-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .info {
+    background: rgba(27, 26, 26, 0.9);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.card-container .information h2 {
+    text-align: left;
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.card-container .product-image:hover img {
+    transition: all 0.3s ease-out;
+}
+
+.card-container .product-image:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.card-container .information ul li i::after {
+    content: "";
+    padding-left: 15px;
+}
+
+.card-container .information ul li i {
+    font-size: 10px;
+}
+
+.card-container .information {
+    line-height: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.card-container .information ul li strong {
+    font-weight: normal;
+}
+
+.pagination a {
+    padding: 8px 9px;
+}
+
+
 /* --------------------------------------------------------------------------------------- */
 @media only screen and (max-width:767px) {
     body {
@@ -837,7 +1050,7 @@ select {
 
     .sign-in-form input[type=submit] {
         width: 100%;
-        padding: 7px 0;
+        padding: 10px 0;
         border-radius: 10px;
         font-size: 3vw;
         margin-left: 0;
@@ -1161,7 +1374,60 @@ select {
         width: 100%;
     }
 
+    .slick-lightbox-slick-img {
+        width: 100%;
+        height: 30%;
+        max-height: 0;
+    }
 
+    .search-box .find-btn {
+        padding: 12px 0;
+        border-radius: 12px;
+    }
+
+    .card-container .product-details {
+        width: 100%;
+        padding: 45px 10px;
+        height: auto;
+    }
+
+    .card-container .product-image {
+        width: 100%;
+    }
+
+    .card-container .product-details h1 {
+        font-size: 3.1vw;
+        display: block;
+        margin-top: -30px;
+    }
+
+    .card-container .information h2 {
+        padding-top: 0;
+        font-size: 3vw;
+    }
+
+    .card-container .information ul li i {
+        font-size: 5px;
+    }
+
+    .card-container .information ul li i::after {
+        padding-left: 10px;
+    }
+
+    .card-container .control {
+        left: 1.8%;
+        bottom: 3%;
+    }
+
+    .card-container .btn span {
+        font-size: 2.8vw;
+    }
+
+    .card-container {
+        height: auto;
+        box-shadow: 0px 0px -6px 9px gray;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1243,13 +1509,12 @@ select {
         height: 25%;
     }
 
-    /* .sign-in-form input[type=text],
+    input[type=text],
     input[type=number],
-    input[type=password] {
-        width: 100%;
-        padding: 15px 10px;
-        font-size: 3vw;
-    } */
+    input[type=password],
+    input[type=submit] {
+        border-radius: 15px;
+    }
 
     .sign-in-form {
         top: 15%;
@@ -1331,7 +1596,6 @@ select {
     input[type=submit] {
         font-size: 2.4vw;
         padding: 24px 14px;
-        border-radius: 24px;
     }
 
     .custom-select label {
@@ -1346,5 +1610,22 @@ select {
     .row-spans span,
     .row-spans a {
         font-size: 2.4vw;
+    }
+
+    .search-box .find-btn {
+        padding: 24px 14px;
+        font-size: 2vw;
+        border-radius: 15px;
+    }
+
+    .search-box input[type=text],
+    input[type=number],
+    input[type=submit],
+    select {
+        border-radius: 15px;
+    }
+
+    .card-container .information h2 {
+        font-size: 1.8vw;
     }
 }
