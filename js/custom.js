@@ -6,6 +6,6 @@ hamburger.addEventListener("click",()=>{
 })
 
 // $('.dropdown ul li').hide();
-$('.nav-a').click(function() {
+$('.nav-b').click(function() {
     $('.dropdown ul li').toggle(200);
 });    

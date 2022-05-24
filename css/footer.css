@@ -1,0 +1,183 @@
+.footer {
+    margin-top: 124px;
+    background-image: linear-gradient(to right top, #56ab2f, #6bb83c, #80c549, #94d356, #a8e063);
+    border-radius: 0 0 0 0;
+}
+
+.footer-nav {
+    position: relative;
+    top: -47px;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.footer-icon div {
+    width: 94px;
+    height: 94px;
+    background-color: #50982C;
+    border-radius: 50%;
+}
+
+.footer-icon img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.footer-menu {
+    padding-bottom: 64px;
+    border-radius: 0 0 0 0;
+    background: rgba(4, 41, 14, 0.14);
+    display: flex;
+    -webkit-box-shadow: -1px 0px 27px -7px rgba(29, 69, 4, 1);
+    -moz-box-shadow: -1px 0px 27px -7px rgba(29, 69, 4, 1);
+    box-shadow: 0px 3px 15px -10px rgb(29 69 4);
+}
+
+.footer-tab {
+    width: 33.33%;
+    margin-top: 64px;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer-tab ul li i:after {
+    content: " ";
+    margin-left: 10px;
+}
+
+.footer-tab ul li {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.footer-tab ul li a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.footer-tab ul li img {
+    transition: transform 250ms;
+}
+
+.footer-tab ul li img:hover {
+    transform: translateY(-10px);
+}
+
+.footer p {
+    margin-top: 64px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.footer-tab h3 {
+    padding: 0
+}
+
+.web {
+    padding-left: 4px;
+    margin-top: -30px;
+    display: block;
+}
+
+/* -------------------------------------Responsive mobile------------------------------------------ */
+@media only screen and (max-width:767px) {
+
+    .footer-icon {
+        width: 50%;
+    }
+
+    .footer-icon div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-icon img {
+        width: 30px;
+        height: 30px;
+        margin-top: 11px;
+        margin-left: 11px;
+    }
+
+    .footer-nav {
+        top: -27px;
+    }
+
+    .footer-menu {
+        display: block;
+    }
+
+    .footer-tab {
+        width: 50%;
+        padding-top: 7%;
+        margin-top: 0;
+
+    }
+
+    .footer-tab h3 {
+        font-size: 4vw;
+
+    }
+
+    .footer-tab ul li {
+        font-size: 3vw;
+        margin-top: 0;
+        line-height: 35px;
+    }
+
+    .footer p {
+        margin-top: 32px;
+        font-size: 3vw;
+    }
+
+    .footer-tab ul li .google {
+        margin-top: 10px;
+    }
+
+    .footer-tab ul li img {
+        margin-left: -11px;
+    }
+
+    .footer {
+        margin-top: 64px;
+    }
+}
+
+/* --------------------------------------Responsive Tablet----------------------------------------- */
+@media (min-width:768px) and (max-width:1024px) {
+    .footer-icon {
+        width: 35%;
+    }
+
+    .footer-tab {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 14px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 2.3vw;
+    }
+
+    .footer-tab ul li {
+        font-size: 2.1vw;
+    }
+
+    .footer-tab h3 {
+        font-size: 2.5vw;
+    }
+}
